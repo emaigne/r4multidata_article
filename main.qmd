@@ -47,9 +47,43 @@ The first step was to study these methods from a theoretical perspective (optimi
 
 At the same time, comparison criteria were established and datasets were prepared using real data from research projects, prior to applying the functions and comparing the results. These steps are described in @fig-workflow, along with the functions we developed to (i) parameterize and build the models, (ii) predict and estimate the performance of the resulting models, and (iii) display a number of comparison graphs.
 
-<!-- FIGURE 1 : à insérer, par ex. ![Workflow d'analyse](figures/image1.png){#fig-workflow} -->
+TODO : compléter la figure (sur mermaid.live)
 
-Figure 1: Workflow d'analyse
+```{mermaid}
+%%| label: fig-workflow
+%%| fig-cap: "Workflow d'analyse"
+flowchart LR
+    X1[" "]
+    X2[" "]
+    X3[" "]
+    M[" "]
+
+    X1 --> M
+    X2 --> M
+    X3 --> M
+
+    M ==> B
+
+    B["<b>Configure & build<br/>models</b>
+    <pre>run_mixomics_rgcca()</pre>"]
+
+    B ==> V
+    B ==> C
+
+    V["<b>Validate, assess<br/>performance of models</b>
+    <pre>run_perf_mixrgcca()<br/>rend_perf_table()</pre>"]
+
+    C["<b>Compare models</b>
+    <pre>compare_criteres()<br/>compare_rmse()<br/>compare_selected_vars()<br/>compare_stability()</pre>"]
+
+    classDef data fill:#fff,stroke:#000,stroke-width:1px;
+    classDef merge fill:#fff,stroke:#000,stroke-width:1px;
+    classDef step fill:#fff,stroke:#2bb5b8,stroke-width:2px,color:#000;
+
+    class X1,X2,X3 data;
+    class M merge;
+    class B,V,C step;
+```
 
 ## Application to a dataset
 
@@ -75,14 +109,11 @@ The packages also differ in terms of a few useful options. For example, mixOmics
 
 En fixant arbitrairement les paramètres de parcimonie de **RGCCA**, nous sélectionnons 31 et 37 variables pour les deux premières composantes de $X_1$ ; 4 et 5 variables pour $X_2$. Ces valeurs ont ensuite été imposées dans le modèle de **mixOmics**. Nous avons calculé les corrélations entre les scores des individus, ainsi qu'entre le poids des variables pour un bloc et une composante dans le cadre d'une MB-sPLS. La première composante de chaque bloc semble assez comparable entre les deux packages avec des corrélations à $\pm 1$ ou assez proches de $\pm 1$. Des différences commencent à apparaître à partir de la seconde composante. Par exemple, la corrélation entre le score des individus pour le bloc $Y$ est de $-0.88$ et celle entre le poids des variables pour le bloc $X_1$ est à $-0.87$ (@fig-corr). En ce qui concerne la sélection des variables, nous observons quelques différences, notamment pour la composante 2 du bloc $X_1$ avec 4 variables sélectionnées spécifiquement par chaque package (@fig-selection).
 
-<!-- FIGURE 2 : à insérer, par ex. ![Corrélation entre le poids des variables pour le bloc $X_1$ pour les deux premières composantes.](figures/image2.png){#fig-corr} -->
+TODO : la figure sera à faire avec le code R (pas de figure insérée !!)
+![Corrélation entre le poids des variables pour le bloc $X_1$ pour les deux premières composantes](figures/fig2.png)
 
-Figure 2 : Corrélation entre le poids des variables pour le bloc $X_1$ pour les deux premières composantes.
-
-<!-- FIGURE 3 : à insérer, par ex. ![Comparaison de la sélection de variables pour la composante 2 du bloc $X_1$.](figures/image3.png){#fig-selection} -->
-
-Figure 3 : Comparaison de la sélection de variables pour la composante 2 du bloc $X_1$. Le nombre de variables sélectionnées par bloc et composante est fixé à l'identique entre les deux modèles.
-
+TODO : la figure sera à faire avec le code R (pas de figure insérée !!)
+![Comparaison de la sélection de variables pour la composante 2 du bloc $X_1$. Le nombre de variables sélectionnées par bloc et composante est fixé à l'identique entre les deux modèles.](figures/fig3.png)
 Les écarts observés dès la seconde composante, et probablement accentués sur les axes suivants, s'expliquent en partie par des différences entre les méthodes de déflations des deux packages. Des travaux ultérieurs pourraient permettre d'investiguer cette piste et de fournir des recommandations à ce sujet.
 
 Des modèles MB-sPLSDA ont également été appliqués pour ces mêmes données avec une variable qualitative à expliquer décrivant les pratiques d'élevage, avec des conclusions similaires à la MB-sPLS.
