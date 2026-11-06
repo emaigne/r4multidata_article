@@ -7,23 +7,57 @@ project:
 title: "Template for contribution to Computo"
 subtitle: "Example dedicated to `R` users"
 author:
-  - name: Jane Doe
+  - name: Alyssa IMBERT
     corresponding: true
-    email: janedoe@nowhere.moon
-    url: https://janedoe.someplace.themoon.org
-    orcid: 0000-0000-0000-0000
+    email: alyssa.imbert@inrae.fr
+    orcid: 0000-0003-4868-8927
     affiliations:
-      - name: Name of Affiliation one
-        department: Statistics
-        url: https://someplace.themoon.org
-  - name: John Doe
-    email: johndoe@nowhere.moon
-    url: https://johndoe.someplace.themoon.org
-    orcid: 0000-0000-0000-0000
+      - name: INRAE, Université Clermont Auvergne, Vetagro Sup, UMRH, 63122 Saint‑Genès‑Champanelle, France
+  - name: Élise MAIGNÉ
+    email: elise.maigne@inrae.fr
+    orcid: 0000-0003-0716-4940
     affiliations:
-      - name: Name of Affiliation two
-        department: Computer Science
-        url: https://someplace.themoon.org
+      - name: Univ Toulouse, INRAE, MIAT, 31326 Castanet Tolosan, France
+  - name: Sébastien THEIL
+    email: sebastien.theil@inrae.fr
+    orcid: 0000-0001-7361-4159
+    affiliations:
+      - name: Université Clermont Auvergne, INRAE, VetAgro Sup, UMR545 Fromage, 15000 Aurillac, France
+  - name: Isabelle SANCHEZ
+    email: isabelle.sanchez@inrae.fr
+    affiliations:
+      - name: INRAE, MISTEA, 2 place Pierre Viala, 34060 Montpellier, France
+  - name: Virginie ROSSARD
+    email: virginie.rossard@inrae.fr
+    orcid: 0000-0002-5484-823X
+    affiliations:
+      - name: INRAE, Univ Montpellier, LBE, 102 Avenue des Étangs, F‑11100 Narbonne, France
+  - name: Éric LATRILLE
+    email: eric.latrille@inrae.fr
+    orcid: 0000-0003-1717-1968
+    affiliations:
+      - name: INRAE, Univ Montpellier, LBE, 102 Avenue des Étangs, F‑11100 Narbonne, France
+  - name: Gwendal CUEFF
+    email: gwendal.cueff@inrae.fr
+    orcid: 0000-0002-6013-5279
+    affiliations:
+      - name: Université Clermont Auvergne, INRAE, UNH, 63000 Clermont‑Ferrand, France
+  - name: Nadia BESSOLTANE
+    email: nadía.bessoltane@inrae.fr
+    orcid: 0000-0001-6931-2529
+    affiliations:
+      - name: IJPB – Institut Jean‑Pierre Bourgin – Sciences du végétal
+  - name: Caroline PELTIER
+    email: caroline.peltier@inrae.fr
+    orcid: 0000-0002-7926-955X
+    affiliations:
+      - name: Université Bourgogne Europe, Institut Agro, CNRS, INRAE, UMR CSGA, 21000 Dijon, France
+      - name: Probe Research Infrastructure, Chemosens facility, CNRS‑INRAE, Dijon, France
+  - name: Marion BRANDOLINI‑BUNLON
+    email: marion.brandolini-bunlon@inrae.fr
+    orcid: 0000-0003-0131-8216
+    affiliations:
+      - name: Université Clermont Auvergne, INRAE, UNH, Plateforme d’Exploration du Métabolisme, MetaboHUB Clermont, 63000 Clermont‑Ferrand, France
 date: last-modified
 date-modified: last-modified
 abstract: >+
