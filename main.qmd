@@ -110,10 +110,13 @@ The packages also differ in terms of a few useful options. For example, mixOmics
 En fixant arbitrairement les paramètres de parcimonie de **RGCCA**, nous sélectionnons 31 et 37 variables pour les deux premières composantes de $X_1$ ; 4 et 5 variables pour $X_2$. Ces valeurs ont ensuite été imposées dans le modèle de **mixOmics**. Nous avons calculé les corrélations entre les scores des individus, ainsi qu'entre le poids des variables pour un bloc et une composante dans le cadre d'une MB-sPLS. La première composante de chaque bloc semble assez comparable entre les deux packages avec des corrélations à $\pm 1$ ou assez proches de $\pm 1$. Des différences commencent à apparaître à partir de la seconde composante. Par exemple, la corrélation entre le score des individus pour le bloc $Y$ est de $-0.88$ et celle entre le poids des variables pour le bloc $X_1$ est à $-0.87$ (@fig-corr). En ce qui concerne la sélection des variables, nous observons quelques différences, notamment pour la composante 2 du bloc $X_1$ avec 4 variables sélectionnées spécifiquement par chaque package (@fig-selection).
 
 TODO : la figure sera à faire avec le code R (pas de figure insérée !!)
+
 ![Corrélation entre le poids des variables pour le bloc $X_1$ pour les deux premières composantes](figures/fig2.png)
 
 TODO : la figure sera à faire avec le code R (pas de figure insérée !!)
-![Comparaison de la sélection de variables pour la composante 2 du bloc $X_1$. Le nombre de variables sélectionnées par bloc et composante est fixé à l'identique entre les deux modèles.](figures/fig3.png)
+
+![Comparaison de la sélection de variables pour la composante 2 du bloc $X_1$. Le nombre de variables sélectionnées par bloc et composante est fixé à l'identique entre les deux modèles](figures/fig3.png)
+
 Les écarts observés dès la seconde composante, et probablement accentués sur les axes suivants, s'expliquent en partie par des différences entre les méthodes de déflations des deux packages. Des travaux ultérieurs pourraient permettre d'investiguer cette piste et de fournir des recommandations à ce sujet.
 
 Des modèles MB-sPLSDA ont également été appliqués pour ces mêmes données avec une variable qualitative à expliquer décrivant les pratiques d'élevage, avec des conclusions similaires à la MB-sPLS.
