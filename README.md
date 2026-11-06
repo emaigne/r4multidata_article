@@ -1,6 +1,8 @@
-# Template for contribution to Computo
-Jane Doe, John Doe
-2026-07-07
+# Comparison of `RGCCA` and `mixOmics` R packages for the analysis of multidimensional data
+Alyssa IMBERT, Élise MAIGNÉ, Sébastien THEIL, Isabelle SANCHEZ, Virginie
+ROSSARD, Éric LATRILLE, Gwendal CUEFF, Nadia BESSOLTANE, Caroline
+PELTIER, Marion BRANDOLINI‑BUNLON
+2026-11-06
 
 ### Citation
 
@@ -18,17 +20,23 @@ License](https://i.creativecommons.org/l/by/4.0/80x15.png)](http://creativecommo
 
 ### Authors’ affiliations
 
-- [Jane Doe](https://janedoe.someplace.themoon.org) (Name of Affiliation one)
-- [John Doe](https://johndoe.someplace.themoon.org) (Name of Affiliation two)
+- Alyssa IMBERT (INRAE, Université Clermont Auvergne, Vetagro Sup, UMRH, 63122 Saint‑Genès‑Champanelle, France)
+- Élise MAIGNÉ (Univ Toulouse, INRAE, MIAT, 31326 Castanet Tolosan, France)
+- Sébastien THEIL (Université Clermont Auvergne, INRAE, VetAgro Sup, UMR545 Fromage, 15000 Aurillac, France)
+- Isabelle SANCHEZ (INRAE, MISTEA, 2 place Pierre Viala, 34060 Montpellier, France)
+- Virginie ROSSARD (INRAE, Univ Montpellier, LBE, 102 Avenue des Étangs, F‑11100 Narbonne, France)
+- Éric LATRILLE (INRAE, Univ Montpellier, LBE, 102 Avenue des Étangs, F‑11100 Narbonne, France)
+- Gwendal CUEFF (Université Clermont Auvergne, INRAE, UNH, 63000 Clermont‑Ferrand, France)
+- Nadia BESSOLTANE (IJPB – Institut Jean‑Pierre Bourgin – Sciences du végétal)
+- Caroline PELTIER (Université Bourgogne Europe, Institut Agro, CNRS, INRAE, UMR CSGA, 21000 Dijon, France, Probe Research Infrastructure, Chemosens facility, CNRS‑INRAE, Dijon, France)
+- Marion BRANDOLINI‑BUNLON (Université Clermont Auvergne, INRAE, UNH, Plateforme d’Exploration du Métabolisme, MetaboHUB Clermont, 63000 Clermont‑Ferrand, France)
 
 ### Abstract
 
-Template for preparing a submission to Computo, using the [quarto
-journal
-extension](https://github.com/computorg/computo-quarto-extension), the
-knitr kernel (R user) and
-[renv](https://rstudio.github.io/renv/articles/renv.html) to set up the
-dependencies. For a detailed, step-by-step guide on preparing your
-article, setting up the continuous integration and submitting it to
-Computo, please consult the [guidelines for
-authors](https://computo-journal.org/site/guidelines-authors.html).
+Multidimensional methods are essential for the statistical analysis of
+complex data, such as omics and spectral data. Although many R packages
+exist, they have different approaches/philosophies. TODO A COMPLETER ICI
+The RGCCA and mixOmics packages were considered. Differences in
+implementation were identified, particularly with regard to deflation
+and prediction algorithms. The impact on the results becomes visible
+from the second component of the models.

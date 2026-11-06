@@ -4,8 +4,8 @@ project:
     - main.qmd
     - README.qmd
 
-title: "Template for contribution to Computo"
-subtitle: "Example dedicated to `R` users"
+title: "Comparison of `RGCCA` and `mixOmics` R packages for the analysis of multidimensional data"
+subtitle: "R4multidata project"
 author:
   - name: Alyssa IMBERT
     corresponding: true
@@ -61,10 +61,14 @@ author:
 date: last-modified
 date-modified: last-modified
 abstract: >+
-  Template for preparing a submission to Computo, using the [quarto journal extension](https://github.com/computorg/computo-quarto-extension), the knitr kernel (R user) and [renv](https://rstudio.github.io/renv/articles/renv.html) to set up the dependencies.
+  Multidimensional methods are essential for the statistical analysis of complex data, 
+  such as omics and spectral data. Although many R packages exist, they have different 
+  approaches/philosophies. TODO A COMPLETER ICI
   
-  For a detailed, step-by-step guide on preparing your article, setting up the continuous integration and submitting it to Computo, please consult the [guidelines for authors](https://computo-journal.org/site/guidelines-authors.html).
-keywords: [key1, key2, key3]
+  The RGCCA and mixOmics packages were considered.  Differences in implementation
+  were identified, particularly with regard to deflation and prediction algorithms. 
+  The impact on the results becomes visible from the second component of the models.
+keywords: [Multidimensional analysis, R package comparison, RGCCA, mixOmics]
 bibliography: references.bib
 github-user: computorg
 repo: "template-computo-R"
